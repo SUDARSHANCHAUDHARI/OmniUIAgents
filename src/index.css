@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #09090b; /* zinc-950 */
+  color: #e4e4e7; /* zinc-200 */
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Thin scrollbars to match the dark shell */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3f3f46 transparent;
+}
+
+/* Minimal markdown styling for assistant messages */
+.prose-omni > :first-child {
+  margin-top: 0;
+}
+.prose-omni > :last-child {
+  margin-bottom: 0;
+}
+.prose-omni p {
+  margin: 0.5em 0;
+}
+.prose-omni ul,
+.prose-omni ol {
+  margin: 0.5em 0;
+  padding-left: 1.25em;
+}
+.prose-omni li {
+  margin: 0.15em 0;
+}
+.prose-omni code {
+  background: #18181b;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.prose-omni pre {
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 0.75em;
+  overflow-x: auto;
+  margin: 0.6em 0;
+}
+.prose-omni pre code {
+  background: transparent;
+  padding: 0;
+}
+.prose-omni a {
+  color: #818cf8;
+  text-decoration: underline;
+}
+.prose-omni h1,
+.prose-omni h2,
+.prose-omni h3 {
+  margin: 0.6em 0 0.3em;
+  font-weight: 600;
+}

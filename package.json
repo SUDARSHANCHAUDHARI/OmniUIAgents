@@ -1,0 +1,38 @@
+{
+  "name": "omni-ui-agents",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local multi-agent AI hub. Chat with direct-API models (BYOK) and local CLI agents (Claude Code, Codex). One shared React renderer runs as a web app and an Electron desktop app.",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "desktop": "cross-env ELECTRON=1 vite",
+    "build": "tsc --noEmit && vite build",
+    "build:desktop": "cross-env ELECTRON=1 vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "zustand": "^5.0.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["electron", "esbuild"]
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vite-plugin-electron": "^0.29.0"
+  }
+}

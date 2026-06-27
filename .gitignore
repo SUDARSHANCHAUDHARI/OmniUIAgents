@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+dist-electron/
+release/
+*.local
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# editor / os
+.DS_Store
+.idea/
+.vscode/
+
+# claude code local settings (never commit)
+.claude/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
